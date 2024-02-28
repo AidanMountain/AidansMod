@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "aidansmod24:item/models/armor/hockey_layer_2"
+    }
+}

@@ -1,0 +1,22 @@
+{
+
+
+"type": "minecraft:crafting_shaped",
+"category": "misc",
+"pattern":[
+    "   ",
+    " # ",
+    "SSS"
+],
+"key": {
+    "#":{
+        "item": "minecraft:leather_boots"
+    },
+    "S":{
+        "item": "minecraft:iron_ingot"
+    }
+},
+"result":{
+    "item": "aidansmod24:hockey_boots"
+}
+}
