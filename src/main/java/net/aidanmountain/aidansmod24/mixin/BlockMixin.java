@@ -11,10 +11,9 @@ import net.minecraft.world.level.block.Block;
 
 @Mixin(Block.class)
 public class BlockMixin {
-  @Inject(at = @At(value = "HEAD"), method = "Lnet/minecraft/world/level/block/Block;getFriction()F", cancellable = true)
-  protected float getFriction(CallbackInfo info){
-    info.cancel(); 
-
+  @Inject(at = @At(value = "HEAD"), method = "Lnet/minecraft/world/level/block/state/BlockBehavior;friction()f", cancellable = true)
+  protected float friction(CallbackInfo info){
+    info.cancel();
     return 0.02f;
   }
 }
