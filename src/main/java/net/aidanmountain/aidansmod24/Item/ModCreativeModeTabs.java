@@ -1,6 +1,7 @@
 package net.aidanmountain.aidansmod24.Item;
 
 import net.aidanmountain.aidansmod24.ExampleMod;
+import net.aidanmountain.aidansmod24.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,8 +22,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.HOCKEY_CHESTPLATE.get());
                         pOutput.accept(ModItems.HOCKEY_LEGGINGS.get());
                         pOutput.accept(ModItems.HOCKEY_BOOTS.get());
+
+                        pOutput.accept(ModBlocks.NEWICE_BLOCK.get());
                     })
                     .build());
+                    
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }

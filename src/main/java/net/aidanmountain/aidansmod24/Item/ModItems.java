@@ -28,6 +28,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> HOCKEY_BOOTS = ITEMS.register("hockey_boots",
         () -> new ArmorItem(ModArmorMaterials.HOCKEY, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    //public static final RegistryObject<Item> NEWICE_BLOCK = ITEMS.register("newice_block",
+    //() -> new Item(new Item.Properties()));
     
     public static void register(IEventBus eventBus ){
         ITEMS.register(eventBus);

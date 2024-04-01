@@ -3,6 +3,7 @@ package net.aidanmountain.aidansmod24;
 //import com.mojang.logging.LogUtils;
 
 import net.aidanmountain.aidansmod24.Item.ModItems;
+import net.aidanmountain.aidansmod24.block.ModBlocks;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -30,6 +31,7 @@ public class ExampleMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -48,6 +50,9 @@ public class ExampleMod
         if(event.getTabKey() == CreativeModeTabs.COMBAT){
                 event.accept(ModItems.HOCKEY);
                 event.accept(ModItems.HOCKEY_BOOTS);
+        }
+        if(event.getTabKey() == CreativeModeTabs.COLORED_BLOCKS){
+            event.accept(ModBlocks.NEWICE_BLOCK);
         }
     }
 
