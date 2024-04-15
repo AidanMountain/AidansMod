@@ -16,7 +16,9 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-//import org.slf4j.Logger;
+import org.slf4j.Logger;
+
+import com.mojang.logging.LogUtils;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ExampleMod.MODID)
@@ -25,7 +27,7 @@ public class ExampleMod
     // Define mod id in a common place for everything to reference
     public static final String MODID = "aidansmod24";
     // Directly reference a slf4j logger
-    //private static final Logger LOGGER = LogUtils.getLogger();
+    private static final Logger LOGGER = LogUtils.getLogger();
 
     public ExampleMod()
     {
@@ -41,7 +43,7 @@ public class ExampleMod
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
+        LOGGER.info("Tick Method");
     }
 
     // Add the example block item to the building blocks tab
