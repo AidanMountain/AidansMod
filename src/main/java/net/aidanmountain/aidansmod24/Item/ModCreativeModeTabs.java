@@ -22,6 +22,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.HOCKEY_CHESTPLATE.get());
                         pOutput.accept(ModItems.HOCKEY_LEGGINGS.get());
                         pOutput.accept(ModItems.HOCKEY_BOOTS.get());
+                        
+                        pOutput.accept(ModItems.HOCKEY_STICK.get());
+                        pOutput.accept(ModItems.HOCKEY_STICKS.get());
+                        pOutput.accept(ModItems.METAL_DETECTOR.get());
 
                         pOutput.accept(ModBlocks.NEWICE_BLOCK.get());
                     })

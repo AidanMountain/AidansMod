@@ -1,10 +1,14 @@
 {
     "item.aidansmod24.hockey": "Hockey",
 
-    "item.aidansmod24.hockey_helmet": "Hockey_Helmet",
-    "item.aidansmod24.hockey_chestplate": "Hockey_Chestplate",
-    "item.aidansmod24.hockey_leggings": "Hockey_Leggings",
-    "item.aidansmod24.hockey_boots": "Hockey_Boots",
+    "item.aidansmod24.hockey_helmet": "Hockey Helmet",
+    "item.aidansmod24.hockey_chestplate": "Hockey Chestplate",
+    "item.aidansmod24.hockey_leggings": "Hockey Leggings",
+    "item.aidansmod24.hockey_boots": "Hockey Boots",
+
+    "item.aidansmod24.metal_detector": "Metal Detector",
+    
+    "item.aidansmod24.hockey_sticks": "Hockey Stick",
 
     "block.aidansmod24.newice_block": "Block of Ice"
 }

@@ -1,6 +1,8 @@
 package net.aidanmountain.aidansmod24.Item;
 
 import net.aidanmountain.aidansmod24.ExampleMod;
+import net.aidanmountain.aidansmod24.Item.custom.HockeyStickItem;
+import net.aidanmountain.aidansmod24.Item.custom.MetalDetectorItem;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -28,6 +30,15 @@ public class ModItems {
 
     public static final RegistryObject<Item> HOCKEY_BOOTS = ITEMS.register("hockey_boots",
         () -> new ArmorItem(ModArmorMaterials.HOCKEY, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> HOCKEY_STICK = ITEMS.register("hockey_stick",
+        () -> new HockeyStickItem(new Item.Properties().durability(100)));
+
+    public static final RegistryObject<Item> HOCKEY_STICKS = ITEMS.register("hockey_sticks",
+        () -> new HockeyStickItems(new Item.Properties().durability(100)));
+    
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties().durability(100)));
 
     //public static final RegistryObject<Item> NEWICE_BLOCK = ITEMS.register("newice_block",
     //() -> new Item(new Item.Properties()));

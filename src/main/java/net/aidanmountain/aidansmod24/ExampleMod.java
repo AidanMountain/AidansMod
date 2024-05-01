@@ -4,6 +4,7 @@ package net.aidanmountain.aidansmod24;
 
 import net.aidanmountain.aidansmod24.Item.ModItems;
 import net.aidanmountain.aidansmod24.block.ModBlocks;
+import net.aidanmountain.aidansmod24.entity.ModEntity;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -34,6 +35,7 @@ public class ExampleMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEntity.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
